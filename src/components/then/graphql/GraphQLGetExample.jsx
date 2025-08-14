@@ -19,8 +19,8 @@ function GraphQLGetExample() {
 
   return (
     <ul>
-      {data.posts.map((post) => (
-        <li key={post.id}>{post.title}</li>
+      {data?.posts?.map(({ id, title }) => (
+        <li key={id}>{title}</li>
       ))}
     </ul>
   );
